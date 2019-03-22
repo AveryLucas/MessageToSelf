@@ -1,0 +1,182 @@
+#sidemenu-container {
+  /* background: #ffeeee; */
+  /* margin: 10% auto; */
+  /* height: 100%; */
+  padding-right: 40px;
+  max-width: 300px;
+}
+
+#sidemenu-container ul {
+  list-style: none;
+  padding-left: 0px;
+  margin: 0;
+}
+
+#sidemenu-container ul li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+#sidemenu-container ul li input[type="checkbox"] {
+  margin: 5px 10px 5px 0px;
+}
+
+#sidemenu-container h4 {
+  margin-bottom: 7.5px;
+  color: rgb(49, 49, 49);
+  /* font-size: 18px; */
+}
+
+#sidemenu-container ul li input[type="text"] {
+  font-size: 16px;
+  width: 100%;
+  padding: 0;
+  background: transparent;
+  margin: 0;
+  margin-left: 23px;
+  color: rgb(80, 79, 79);
+  border: none;
+  transition: box-shadow 200ms;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  box-shadow: 0px 1px 0px 0px #00000075;
+}
+
+.todoBlock h4 {
+  margin: 5px 0;
+  color: rgb(49, 49, 49);
+  /* font-size: 18px; */
+}
+
+.todoBlock {
+  margin-bottom: 5px;
+  padding: 5px 0;
+}
+
+#editor {
+  width: 350px;
+  -webkit-transition: all 350ms;
+  transition: all 350ms;
+  /* overflow-x: auto; */
+  padding: 0 5px;
+}
+
+#editor.test {
+  width: 0;
+  /* opacity: 0; */
+  /* border: 1px solid transparent; */
+  /* box-shadow: none; */
+}
+
+#editor>div {
+  position: sticky;
+  top: 20px;
+  width: 350px;
+  min-height: 200px;
+  max-height: 500px;
+  overflow-y: auto;
+  border-radius: 0px;
+  border: 1px solid #A1A1A1;
+  /* box-shadow: 0px 1px 2px #00000040; */
+  display: flex;
+  flex-direction: column;
+}
+
+#editor.test>div {
+  display: none;
+}
+
+#submit {
+  align-items: center;
+  justify-content: flex-end;
+  display: flex;
+  padding: 1px;
+}
+
+#editor>div #submit button {
+  color: #fff;
+  padding: 6px 6%;
+  margin: 10px;
+  border: none;
+  /* box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5); */
+  background: linear-gradient(104.31deg, #3C5BFF 0%, #1D41FF 0.01%, #3354FF 100%);
+  transition: transform 300ms;
+}
+
+#editor>div #submit button:hover {
+  transform: translateY(.5px);
+  background: #1a34b9;
+}
+
+#editor>div #submit button:active {
+  transform: translateY(1px);
+  background: #182980;
+}
+
+#editor>div #submit button:focus {
+  outline: none;
+}
+
+.messageBlock p {
+  margin: 0;
+}
+
+.messageBlock span {
+  color: #797979;
+}
+
+.messageBlock {
+  margin: 0px -10px 0px -10px;
+  padding: 10px 10px;
+  width: 100%;
+}
+
+.messageBlock:hover {
+  background: #f4f4f4;
+  cursor: pointer;
+}
+
+#sidemenu-container .messageList .messageHeader p {
+  color: #6f6f6f;
+}
+
+#sidemenu-container .messageList .messageHeader h4,
+#sidemenu-container .messageList .messageHeader p {
+  margin: 0;
+}
+
+#sidemenu-container .messageList .messageHeader {
+  margin-bottom: 7.5px;
+}
+
+/* 
+.todoBlock li:hover .delete-button {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.todoBlock li span,
+.todoBlock li input[type="checkbox"],
+.todoBlock li .delete-button {
+  transition: all 800ms 300ms;
+}
+
+.todoBlock li:hover span,
+.todoBlock li:hover input[type="checkbox"] {
+  transform: translateX(15px);
+}
+
+.delete-button {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #679494;
+  border-radius: 2px;
+  padding: 1px;
+  opacity: 0;
+  transform: translateX(-20px);
+} */
